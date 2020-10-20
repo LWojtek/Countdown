@@ -27,8 +27,9 @@ const weekdays = [
 
 const giveaway = document.querySelector('.giveaway');
 const deadline = document.querySelector('.deadline');
-const deadline1 = document.querySelector('.deadline1');
+const deadline1 = document.querySelector('.deadline-expired');
 const items = document.querySelectorAll('.deadline-format h4');
+const img = document.querySelector('.img');
 
 // display giveaway future day
 
@@ -132,6 +133,12 @@ function getRemainingTime() {
     items[3].innerHTML = format(0);
 
     deadline1.innerHTML = `<h3> !!! EXPIRED !!! </h3>`
+
+
+    deadline1.classList.add('deadline-animation');
+    img.classList.add('img-faded');
+
+
 
   }
 

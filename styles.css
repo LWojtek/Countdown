@@ -158,6 +158,47 @@ p {
 /*  global classes */
 
 
+.deadline-expired {
+
+  justify-content: center;
+  padding: 25px;
+}
+
+.deadline-animation {
+  animation: appear 1.8s forwards;
+
+}
+
+@keyframes appear {
+
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.25;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  75% {
+    opacity: 0.75;
+  }
+
+  100% {
+    opacity: 1;
+  }
+
+}
+
+.img-faded {
+  opacity: .3;
+  transition: .8s;
+}
+
+
 
 .btn {
   text-transform: uppercase;
@@ -251,11 +292,6 @@ Countdown Timer
   justify-content: center;
 }
 
-.deadline1 {
-  display: flex;
-  justify-content: center;
-
-}
 
 .deadline-format {
   background: var(--clr-grey-1);
